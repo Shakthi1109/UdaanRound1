@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Assets</title>
+</head>
+<body>
+{% for dict_item in parent_dict %}
+   {% for key, value in dict_item.items() %}
+      <span>{{key}} ::::: {{value}}</span>
+      <br>
+   {% endfor %}
+{% endfor %}
+</body>
+</html>
